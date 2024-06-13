@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import { Box, Grid, Typography } from "@mui/material";
 import AccountCard from "@/components/AccountCard";
 import SpendPieChart from "@/components/SpendPieChart";
+import MyAccountsCard from "@/components/MyAccountsCard";
+import IncomeForm from "@/components/IncomeForm";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +41,26 @@ export default function Home() {
               <AccountCard />
             </Grid>
             <Grid item xs={12} sm={8}>
-              {/* <SpendPieChart /> */}
+              <SpendPieChart />
+            </Grid>
+          </Grid>
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              p: "5px 5px",
+              // backgroundColor: "#f5f5f5",
+            }}
+          >
+            <Grid item xs={12} sm={4}>
+              <MyAccountsCard />
+            </Grid>
+
+            <Grid item xs={12} sm={8}>
+            <IncomeForm />
             </Grid>
           </Grid>
         </Box>

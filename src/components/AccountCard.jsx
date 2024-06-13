@@ -4,7 +4,7 @@ import React from 'react'
 const AccountCard = () => {
     return (
         <Box sx={{
-            // display:"flex",
+            p:"20px",
             backgroundColor: "#f5f5f5",
         }}>
             <Typography sx={{

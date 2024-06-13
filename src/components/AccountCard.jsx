@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import useFinance from './useFinance';
+import useFinance from '../useFinance';
 
 const AccountCard = () => {
   const { data } = useFinance();

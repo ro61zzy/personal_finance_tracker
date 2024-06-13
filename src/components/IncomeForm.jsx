@@ -8,7 +8,9 @@ const IncomeForm = () => {
   const [amount, setAmount] = useState('');
 
   const handleSubmit = () => {
+    console.log('Adding income:', account, amount); // Check values before adding transaction
     addTransaction('income', account, parseFloat(amount));
+    console.log('After adding income:', data); // Check state after adding transaction
     setAccount('');
     setAmount('');
   };
@@ -42,6 +44,6 @@ const IncomeForm = () => {
       </Button>
     </Box>
   );
-}
+};
 
 export default IncomeForm;

@@ -36,12 +36,13 @@ const useFinance = () => {
       updatedAccounts[account] -= amount;
     }
     const newTransaction = { type, account, amount };
+    console.log('Before update:', data); // Check state before update
     setData({
       accounts: updatedAccounts,
       transactions: [...data.transactions, newTransaction]
     });
+    console.log('After update:', data); // Check state after update
   };
-
   return {
     data,
     addTransaction

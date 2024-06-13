@@ -1,0 +1,9 @@
+{
+    "accounts": {
+      "currentBankAccount": 20000,
+      "creditCard": 10000,
+      "savingsAccount": 15000
+    },
+    "transactions": []
+  }
+  

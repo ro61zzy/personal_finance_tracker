@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, TextField, Typography, MenuItem, Button } from '@mui/material';
-import useFinance from './useFinance';
+import useFinance from '../useFinance';
 
 const IncomeForm = () => {
   const { data, addTransaction } = useFinance();

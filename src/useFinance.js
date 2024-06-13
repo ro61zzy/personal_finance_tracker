@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 const useFinance = () => {
   const [data, setData] = useState({
     accounts: {
-      currentBankAccount: 0,
-      creditCard: 0,
-      savingsAccount: 0,
+      currentBankAccount: 20000,
+      creditCard: 10000,
+      savingsAccount: 15000,
     },
     transactions: []
   });

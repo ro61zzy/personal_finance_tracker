@@ -7,18 +7,23 @@ import AccountCard from "@/components/AccountCard";
 import SpendPieChart from "@/components/SpendPieChart";
 import MyAccountsCard from "@/components/MyAccountsCard";
 import IncomeForm from "@/components/IncomeForm";
+import Expense from "@/components/Expense";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <Box>
-      <Typography>My Spendy Tracker</Typography>
+      <Typography sx={{
+        textAlign:"center",
+        fontSize:"30px"
+      }}>My Spendy Tracker</Typography>
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          padding:{xl:"10px", sm:"20px"}
         }}
       >
         <Box
@@ -59,8 +64,11 @@ export default function Home() {
               <MyAccountsCard />
             </Grid>
 
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} sm={4}>
             <IncomeForm />
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Expense />
             </Grid>
           </Grid>
         </Box>

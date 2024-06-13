@@ -18,4 +18,6 @@ I was to set the initial amounts to zero so that a user can tell how the account
 
 **As of project submission**: The website is up but doesn't work as desired😭
 
+yet to work on responsiveness too 😭
+
 I will create a new branch that I will work on **after** to ensure the project works perfectly; I definitely would have wanted more time 🕰️

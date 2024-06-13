@@ -1,6 +1,6 @@
 **Welcome to My Spendy Tracker**
 
-Vercel link  
+Vercel link : https://personalfinancetracker-apyrowcwp-rozzys-projects.vercel.app/
 
 Allows a user to track their incomes and expenses
 
@@ -18,4 +18,4 @@ I was to set the initial amounts to zero so that a user can tell how the account
 
 **As of project submission**: The website is up but doesn't work as desired😭
 
-I will create a new branch that I will work on **after** to ensure the project works perfectly; definitely would have wanted more time 🕰️
+I will create a new branch that I will work on **after** to ensure the project works perfectly; I definitely would have wanted more time 🕰️

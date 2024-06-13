@@ -39,7 +39,7 @@ export default function Home() {
               <AccountCard />
             </Grid>
             <Grid item xs={12} sm={8}>
-              <SpendPieChart />
+              {/* <SpendPieChart /> */}
             </Grid>
           </Grid>
         </Box>

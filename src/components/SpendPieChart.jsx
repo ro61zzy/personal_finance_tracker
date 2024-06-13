@@ -1,6 +1,6 @@
 import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Box, Card, CardContent, Typography } from '@mui/material';
 
 
 const SpendPieChart = () => {
@@ -18,18 +18,15 @@ const SpendPieChart = () => {
 
     return (
         <Box>
-            <Card style={{ maxWidth: 600, margin: '0 auto' }}>
+            <Card style={{  }}>
                 <CardContent>
-                    <Typography variant="h5" component="div" gutterBottom>
-                        My Spending
-                    </Typography>
-                    <PieChart width={400} height={400}>
+                    <PieChart width={200} height={200}>
                         <Pie
                             data={data}
-                            cx={200}
-                            cy={200}
+                            cx={20}
+                            cy={20}
                             labelLine={false}
-                            outerRadius={150}
+                            outerRadius={90}
                             fill="#8884d8"
                             dataKey="value"
                         >

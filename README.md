@@ -1,40 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to My Spendy Tracker
 
-## Getting Started
+vercel link  
 
-First, run the development server:
+Allows a user to track their incomes and expenses
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Steps to Follow
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once on the web app, supply the accounts with amounts, we have three different accounts that hold income;
+you will see the total amount of all the accounts on the first card, Current Remaining Amount
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+the Pie chart helps you track your expenses, I had indicated the types of expenses that we have but time is running out and this component ain't working to my like
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+you can record your expenses and indicate from which account you are costing these expenses
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I was to set the initial amounts to zero so that when user can tell how the accounts are behaving, I however decided to work with figures (useFinance) so as to tell if the App is working
 
-## Learn More
+As of project submission: web site is up but doesn't work as desired
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I will create a new branch that I will work on after to ensure project works perfectly; definitely would have wanted more time

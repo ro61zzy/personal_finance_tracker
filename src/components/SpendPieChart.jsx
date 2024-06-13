@@ -1,55 +1,50 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
-import { Card, CardContent, Typography, Box } from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
 import {
-    Chart as ChartJS,
-    ArcElement,
-    Tooltip,
-    Legend
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend
 } from 'chart.js';
+import useFinance from '../useFinance';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const data = {
-    labels: ['Transport', 'Going Out', 'Food Shopping', 'Self Care', 'Others', 'Insurance'],
+const SpendingPieChart = () => {
+  const { data } = useFinance();
+  const chartData = {
+    labels: ['Current Bank Account', 'Credit Card', 'Savings Account'],
     datasets: [
-        {
-            label: 'Spending',
-            data: [3000, 2000, 5000, 3000, 1500, 1000],
-            backgroundColor: [
-                '#0088FE',
-                '#00C49F',
-                '#FFBB28',
-                '#FF8042',
-                '#FF6384',
-                '#36A2EB',
-            ],
-            hoverBackgroundColor: [
-                '#0077D9',
-                '#00B38D',
-                '#E6A700',
-                '#FF7036',
-                '#FF5073',
-                '#1F77D4',
-            ],
-        },
+      {
+        label: 'Accounts',
+        data: [
+          data.accounts.currentBankAccount,
+          data.accounts.creditCard,
+          data.accounts.savingsAccount,
+        ],
+        backgroundColor: ['#0088FE', '#00C49F', '#FFBB28'],
+        hoverBackgroundColor: ['#0077D9', '#00B38D', '#E6A700'],
+      },
     ],
+  };
+
+  const options = {
+    maintainAspectRatio: false,
+  };
+
+  return (
+    <Card style={{ maxWidth: 400, margin: '0 auto' }}>
+      <CardContent>
+        <Typography variant="h5" component="div" gutterBottom>
+          Account Distribution
+        </Typography>
+        <div style={{ position: 'relative', height: '250px', width: '250px' }}>
+          <Pie data={chartData} options={options} />
+        </div>
+      </CardContent>
+    </Card>
+  );
 };
-const SpendPieChart = () => {
 
-    return (
-        <Box>
-            <Card style={{}}>
-                <CardContent>
-                    <Box sx={{ position: 'relative', height: '250px', width: '250px' }}>
-
-                        <Pie data={data} />
-                    </Box>
-
-                </CardContent>
-            </Card>
-        </Box>
-    )
-}
-
-export default SpendPieChart
+export default SpendingPieChart;

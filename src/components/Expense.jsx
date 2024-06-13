@@ -1,23 +1,47 @@
-import { Box, TextField, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react';
+import { Box, TextField, Typography, MenuItem, Button } from '@mui/material';
+import useFinance from '../useFinance';
 
 const Expense = () => {
-    return (
-        <Box sx={{
-            backgroundColor: "#f5f5f5",
-            p: "20px"
-        }}>
-            <Typography sx={{
-                color: "green"
-            }}>Record Expense</Typography>
-            <TextField
-                label="Type"
-            />
-             <TextField
-                label="From Account"
-            />
-        </Box>
-    )
+  const { data, addTransaction } = useFinance();
+  const [account, setAccount] = useState('');
+  const [amount, setAmount] = useState('');
+
+  const handleSubmit = () => {
+    addTransaction('expense', account, parseFloat(amount));
+    setAccount('');
+    setAmount('');
+  };
+
+  return (
+    <Box sx={{ backgroundColor: "#f5f5f5", p: "20px" }}>
+      <Typography sx={{ color: "green" }}>Record Expense</Typography>
+      <TextField
+        select
+        label="From Account"
+        value={account}
+        onChange={(e) => setAccount(e.target.value)}
+        fullWidth
+        margin="normal"
+      >
+        {Object.keys(data.accounts).map(acc => (
+          <MenuItem key={acc} value={acc}>
+            {acc}
+          </MenuItem>
+        ))}
+      </TextField>
+      <TextField
+        label="Amount"
+        value={amount}
+        onChange={(e) => setAmount(e.target.value)}
+        fullWidth
+        margin="normal"
+      />
+      <Button onClick={handleSubmit} variant="contained" color="primary">
+        Add Expense
+      </Button>
+    </Box>
+  );
 }
 
-export default Expense
+export default Expense;

@@ -3,27 +3,34 @@ import { useState, useEffect } from 'react';
 const useFinance = () => {
   const [data, setData] = useState({
     accounts: {
-      currentBankAccount: 0,
-      creditCard: 0,
-      savingsAccount: 0,
+      currentBankAccount: 20000,
+      creditCard: 10000,
+      savingsAccount: 15000,
     },
     transactions: []
   });
 
+  // Fetch initial data or load from localStorage
   useEffect(() => {
     const storedData = localStorage.getItem('financeData');
     if (storedData) {
       setData(JSON.parse(storedData));
     } else {
-      fetch('/path/to/data.json')
-        .then(response => response.json())
-        .then(initialData => {
-          setData(initialData);
-          localStorage.setItem('financeData', JSON.stringify(initialData));
-        });
+      // Fetch initial data from an API or set default data
+      const initialData = {
+        accounts: {
+          currentBankAccount: 20000,
+          creditCard: 10000,
+          savingsAccount: 15000,
+        },
+        transactions: []
+      };
+      setData(initialData);
+      localStorage.setItem('financeData', JSON.stringify(initialData));
     }
   }, []);
 
+  // Update localStorage whenever 'data' changes
   useEffect(() => {
     localStorage.setItem('financeData', JSON.stringify(data));
   }, [data]);

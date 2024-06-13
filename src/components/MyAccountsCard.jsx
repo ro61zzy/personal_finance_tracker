@@ -10,12 +10,13 @@ const MyAccountsCard = () => {
       <Box sx={{
         display: "flex",
         flexDirection: "column",
-        p: "20px"
+        p: "40px"
       }}>
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "red"
+          backgroundColor: "red",
+          p: "20px"
         }}>
           <Typography>Current Bank Account</Typography>
           <Typography>{data.accounts.currentBankAccount}</Typography>
@@ -23,7 +24,8 @@ const MyAccountsCard = () => {
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "orange"
+          backgroundColor: "orange",
+          p: "20px"
         }}>
           <Typography>Credit Card</Typography>
           <Typography>{data.accounts.creditCard}</Typography>
@@ -31,7 +33,8 @@ const MyAccountsCard = () => {
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "green"
+          backgroundColor: "green",
+          p: "20px"
         }}>
           <Typography>Savings Account</Typography>
           <Typography>{data.accounts.savingsAccount}</Typography>

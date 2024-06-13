@@ -9,6 +9,7 @@ const AccountCard = () => {
   return (
     <Box sx={{
       p: "20px",
+      ml:"15px",
       backgroundColor: "#f5f5f5",
     }}>
       <Typography sx={{

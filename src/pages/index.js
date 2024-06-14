@@ -37,11 +37,20 @@ export default function Home() {
             }}
           >
             <Grid item xs={12} sm={4}>
+              <Box sx={{height:"300px", backgroundColor: "#f5f5f5",}}>
+
               <AccountCard />
+              </Box>
             </Grid>
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} sm={4}>
+            <Box sx={{height:"300px", backgroundColor: "#f5f5f5",}}>
+
               <SpendPieChart />
+            </Box>
             </Grid>
+            {/* <Grid item xs={12} sm={4}>
+              <SpendPieChart />
+            </Grid> */}
           </Grid>
           <Grid
             container

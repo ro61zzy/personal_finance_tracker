@@ -1,16 +1,16 @@
+// FinanceContext.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const FinanceContext = createContext();
 
 export const FinanceProvider = ({ children }) => {
   const [data, setData] = useState({
-  
     accounts: {
       currentBankAccount: 0,
       creditCard: 0,
       savingsAccount: 0,
     },
-     transactions: [],
+    transactions: [],
     categories: ['Transport', 'Going Out', 'Food Shopping', 'Self Care', 'Others', 'Insurance'],
   });
 
@@ -20,7 +20,6 @@ export const FinanceProvider = ({ children }) => {
       setData(JSON.parse(storedData));
     } else {
       const initialData = {
-   
         accounts: {
           currentBankAccount: 0,
           creditCard: 0,

@@ -18,11 +18,19 @@ const MyAccountsCard = () => {
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "red",
+         // backgroundColor: "red",
           p: "20px"
         }}>
-          <Typography>Current Bank Account</Typography>
-          <Typography>{data.accounts.currentBankAccount}</Typography>
+          <Typography
+          sx={{
+            color:"grey",
+            fontSize:"13px"
+          }}>Current Bank Account</Typography>
+          <Typography 
+           sx={{
+            color:"#450202",
+            fontSize:"40px"
+          }}>{data.accounts.currentBankAccount.toLocaleString()}</Typography>
         </Box>
         <Box sx={{
           display: "flex",
@@ -30,8 +38,15 @@ const MyAccountsCard = () => {
           backgroundColor: "orange",
           p: "20px"
         }}>
-          <Typography>Credit Card</Typography>
-          <Typography>{data.accounts.creditCard}</Typography>
+          <Typography
+            sx={{
+              color:"grey",
+              fontSize:"13px"
+            }}>Credit Card</Typography>
+          <Typography   sx={{
+            color:"#450202",
+            fontSize:"40px"
+          }}>{data.accounts.creditCard.toLocaleString()}</Typography>
         </Box>
         <Box sx={{
           display: "flex",
@@ -39,8 +54,14 @@ const MyAccountsCard = () => {
           backgroundColor: "green",
           p: "20px"
         }}>
-          <Typography>Savings Account</Typography>
-          <Typography>{data.accounts.savingsAccount}</Typography>
+          <Typography   sx={{
+            color:"grey",
+            fontSize:"13px"
+          }}>Savings Account</Typography>
+          <Typography   sx={{
+            color:"#450202",
+            fontSize:"40px"
+          }}>{data.accounts.savingsAccount}</Typography>
         </Box>
       </Box>
     </Box>

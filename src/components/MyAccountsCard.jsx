@@ -5,6 +5,8 @@ import useFinance from '../useFinance';
 const MyAccountsCard = () => {
   const { data } = useFinance();
 
+  console.log('MyAccountsCard rendered with data:', data);
+
   return (
     <Box>
       <Box sx={{

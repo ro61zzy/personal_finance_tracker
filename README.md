@@ -6,7 +6,7 @@ Vercel link : https://personalfinancetracker-apyrowcwp-rozzys-projects.vercel.ap
 The Personal Finance Tracker application is designed to help you manage your financial transactions effectively. It allows you to record income, track expenses by category, and visualize spending patterns through a pie chart. Whether you're budgeting, analyzing your spending habits, or simply keeping track of your accounts, this application provides a straightforward way to monitor your finances.
 
 
-**Using the Application**\
+**Using the Application**
  1. Recording Income\
 To begin tracking your finances, start by recording your income:
 
@@ -46,3 +46,13 @@ Visualize your spending habits:
 **Additional Features**\
 **Data Persistence:** Your financial data is stored locally using localStorage, ensuring your information persists across sessions.
 **Responsive Design:** The application is responsive and adapts to various screen sizes for optimal user experience on desktop and mobile devices.
+  <br />
+
+<p align="center">
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_1.webp" />
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_2.webp" />
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_3.webp" />
+
+</p>
+
+ <br /> 

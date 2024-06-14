@@ -45,6 +45,8 @@ Visualize your spending habits:
 
 **Additional Features**\
 **Data Persistence:** Your financial data is stored locally using localStorage, ensuring your information persists across sessions.\
+
+<hr />
 **Responsive Design:** The application is responsive and adapts to various screen sizes for optimal user experience on desktop and mobile devices.
   <br />
 
@@ -55,10 +57,10 @@ Visualize your spending habits:
 
 </p>
 
- <br /> 
-**Feedback**\
+<hr />
+**Feedback**
 
-We value your feedback!\
+We value your feedback!
 
 If you have any suggestions, feature requests, or issues to report, please feel free to open an issue on GitHub. Your input helps improve the Personal Finance Tracker and make it more useful for everyone. Thank you for using the application!
 

@@ -18,7 +18,7 @@ To begin tracking your finances, start by recording your income:
   <br />
 
 <div align="center">
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/web.webp" />
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/main/web.webp" />
 </div>
 
  <br /> 
@@ -51,9 +51,9 @@ Visualize your spending habits:
   <br />
 
 <p align="center">
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/phone_1.webp" width="300"/>
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/phone_2.webp" width="300"/>
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/phone_3.webp" width="300"/>
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/main/phone_1.webp" width="300"/>
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/main/phone_2.webp" width="300"/>
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/main/phone_3.webp" width="300"/>
 
 </p>
 

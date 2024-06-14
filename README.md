@@ -55,9 +55,11 @@ Visualize your spending habits:
 
 </p>
 
- <hr /> 
+ <br /> 
 **Feedback**\
+
 We value your feedback!\
+
 If you have any suggestions, feature requests, or issues to report, please feel free to open an issue on GitHub. Your input helps improve the Personal Finance Tracker and make it more useful for everyone. Thank you for using the application!
 
 

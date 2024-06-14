@@ -13,8 +13,9 @@ const MyAccountsCard = () => {
       <Box sx={{
         display: "flex",
         flexDirection: "column",
-        p: "40px"
+        // p: "40px"
       }}>
+     
         <Box sx={{
           display: "flex",
           flexDirection: "column",

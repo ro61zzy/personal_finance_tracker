@@ -13,6 +13,7 @@ export default function Home() {
         sx={{
           textAlign: "center",
           fontSize: "30px",
+          pt:"30px"
         }}
       >
         My Spendy Tracker
@@ -82,15 +83,18 @@ export default function Home() {
             }}
           >
             <Grid item xs={12} sm={4}>
+              
             <Box
                 sx={{
                   display: "flex",
+                  flexDirection:"column",
                   justifyContent: "center",
                   alignItems: "center",
                   height: "400px",
                   backgroundColor: "#f5f5f5",
                 }}
               >
+                   <Typography sx={{textAlign:"center", color:"#000", fontSize:"20px"}}>Balances</Typography>
               <MyAccountsCard />
                 </Box>
             </Grid>

@@ -12,6 +12,10 @@ const AccountCard = () => {
       p: "20px",
       ml:"15px",
       backgroundColor: "#f5f5f5",
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"center",
+      alignItems:"center"
     }}>
       <Typography sx={{
         fontSize: "18px",
@@ -20,8 +24,8 @@ const AccountCard = () => {
         Current Remaining Amount:
       </Typography>
       <Typography sx={{
-        fontSize: "25px",
-        color: "blue"
+        fontSize: "30px",
+        color: "#1b4c7a"
       }}>
         {totalRemaining.toLocaleString()}
       </Typography>

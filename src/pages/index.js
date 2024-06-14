@@ -1,15 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+// Home.js
 import { Box, Grid, Typography } from "@mui/material";
 import AccountCard from "@/components/AccountCard";
 import SpendPieChart from "@/components/SpendPieChart";
 import MyAccountsCard from "@/components/MyAccountsCard";
 import IncomeForm from "@/components/IncomeForm";
 import Expense from "@/components/Expense";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -39,7 +34,6 @@ export default function Home() {
               justifyContent: "center",
               alignItems: "center",
               p: "5px 5px",
-              // backgroundColor: "#f5f5f5",
             }}
           >
             <Grid item xs={12} sm={4}>
@@ -57,15 +51,13 @@ export default function Home() {
               justifyContent: "center",
               alignItems: "center",
               p: "5px 5px",
-              // backgroundColor: "#f5f5f5",
             }}
           >
             <Grid item xs={12} sm={4}>
               <MyAccountsCard />
             </Grid>
-
             <Grid item xs={12} sm={4}>
-            <IncomeForm />
+              <IncomeForm />
             </Grid>
             <Grid item xs={12} sm={4}>
               <Expense />

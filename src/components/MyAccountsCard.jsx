@@ -1,6 +1,7 @@
+// MyAccountsCard.jsx
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import useFinance from '../useFinance';
+import { useFinance } from '../FinanceContext';
 
 const MyAccountsCard = () => {
   const { data } = useFinance();
@@ -44,6 +45,6 @@ const MyAccountsCard = () => {
       </Box>
     </Box>
   );
-}
+};
 
 export default MyAccountsCard;

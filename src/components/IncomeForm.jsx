@@ -1,6 +1,7 @@
+// IncomeForm.jsx
 import React, { useState } from 'react';
 import { Box, TextField, Typography, MenuItem, Button } from '@mui/material';
-import useFinance from '../useFinance';
+import { useFinance } from '../FinanceContext';
 
 const IncomeForm = () => {
   const { data, addTransaction } = useFinance();

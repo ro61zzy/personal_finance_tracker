@@ -1,5 +1,4 @@
-//let's use useContext to manage state throughout the app
-
+// FinanceContext.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const FinanceContext = createContext();
@@ -34,7 +33,6 @@ export const FinanceProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('financeData', JSON.stringify(data));
-    console.log('Data updated in FinanceContext:', data);
   }, [data]);
 
   const addTransaction = (type, account, amount) => {
@@ -46,11 +44,6 @@ export const FinanceProvider = ({ children }) => {
     }
     const newTransaction = { type, account, amount };
     setData({
-      accounts: updatedAccounts,
-      transactions: [...data.transactions, newTransaction]
-    });
-    console.log('Transaction added:', newTransaction);
-    console.log('Data after transaction:', {
       accounts: updatedAccounts,
       transactions: [...data.transactions, newTransaction]
     });

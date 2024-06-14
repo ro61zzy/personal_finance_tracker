@@ -1,6 +1,7 @@
+// AccountCard.jsx
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import useFinance from '../useFinance';
+import { useFinance } from '../FinanceContext'; // Update this import to use FinanceContext
 
 const AccountCard = () => {
   const { data } = useFinance();

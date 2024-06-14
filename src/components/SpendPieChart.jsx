@@ -7,7 +7,7 @@ import {
   Tooltip,
   Legend
 } from 'chart.js';
-import useFinance from '../useFinance';
+import { useFinance } from '../FinanceContext';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

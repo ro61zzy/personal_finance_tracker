@@ -1,18 +1,17 @@
-// FinanceContext.js
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const FinanceContext = createContext();
 
 export const FinanceProvider = ({ children }) => {
   const [data, setData] = useState({
+  
     accounts: {
       currentBankAccount: 0,
       creditCard: 0,
       savingsAccount: 0,
     },
+     transactions: [],
     categories: ['Transport', 'Going Out', 'Food Shopping', 'Self Care', 'Others', 'Insurance'],
-    transactions: []
   });
 
   useEffect(() => {
@@ -21,13 +20,14 @@ export const FinanceProvider = ({ children }) => {
       setData(JSON.parse(storedData));
     } else {
       const initialData = {
+   
         accounts: {
           currentBankAccount: 0,
           creditCard: 0,
           savingsAccount: 0,
         },
+        transactions: [],
         categories: ['Transport', 'Going Out', 'Food Shopping', 'Self Care', 'Others', 'Insurance'],
-        transactions: []
       };
       setData(initialData);
       localStorage.setItem('financeData', JSON.stringify(initialData));
@@ -39,7 +39,7 @@ export const FinanceProvider = ({ children }) => {
     console.log('Data updated in FinanceContext:', data);
   }, [data]);
 
-  const addTransaction = (type, account, amount, category = '') => {
+  const addTransaction = (type, account, amount, category) => {
     const updatedAccounts = { ...data.accounts };
     if (type === 'income') {
       updatedAccounts[account] += amount;
@@ -48,14 +48,13 @@ export const FinanceProvider = ({ children }) => {
     }
     const newTransaction = { type, account, amount, category };
     setData({
+      ...data,
       accounts: updatedAccounts,
-      categories: data.categories,
       transactions: [...data.transactions, newTransaction]
     });
     console.log('Transaction added:', newTransaction);
     console.log('Data after transaction:', {
       accounts: updatedAccounts,
-      categories: data.categories,
       transactions: [...data.transactions, newTransaction]
     });
   };

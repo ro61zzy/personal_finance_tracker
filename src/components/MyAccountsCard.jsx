@@ -1,6 +1,6 @@
 // MyAccountsCard.jsx
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Divider } from '@mui/material';
 import { useFinance } from '../FinanceContext';
 
 const MyAccountsCard = () => {
@@ -32,10 +32,11 @@ const MyAccountsCard = () => {
             fontSize:"40px"
           }}>{data.accounts.currentBankAccount.toLocaleString()}</Typography>
         </Box>
+        <Divider />
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "orange",
+          // backgroundColor: "orange",
           p: "20px"
         }}>
           <Typography
@@ -48,10 +49,11 @@ const MyAccountsCard = () => {
             fontSize:"40px"
           }}>{data.accounts.creditCard.toLocaleString()}</Typography>
         </Box>
+        <Divider />
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "green",
+          // backgroundColor: "green",
           p: "20px"
         }}>
           <Typography   sx={{
@@ -61,7 +63,7 @@ const MyAccountsCard = () => {
           <Typography   sx={{
             color:"#450202",
             fontSize:"40px"
-          }}>{data.accounts.savingsAccount}</Typography>
+          }}>{data.accounts.savingsAccount.toLocaleString()}</Typography>
         </Box>
       </Box>
     </Box>

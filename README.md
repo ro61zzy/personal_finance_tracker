@@ -10,7 +10,7 @@ Once on the web app, supply the accounts with amounts, we have three different a
 you will see the total amount of all the accounts on the first card, **Current Remaining Amount**
 
 
-<img src="https://github.com/ro61zzy/ro61zzy/blob/main/tarantulacando.webp" />
+<img src="https://github.com/ro61zzy/personal_finance_tracker/web.webp" />
 
 
 The Pie chart helps you track your expenses, I had indicated the types of expenses that we have but time is running out and this component ain't working to my like

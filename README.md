@@ -49,9 +49,9 @@ Visualize your spending habits:
   <br />
 
 <p align="center">
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_1.webp" />
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_2.webp" />
-<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_3.webp" />
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_1.webp" width="350"/>
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_2.webp" width="350"/>
+<img src="https://github.com/ro61zzy/personal_finance_tracker/blob/after_submission/phone_3.webp" width="350"/>
 
 </p>
 

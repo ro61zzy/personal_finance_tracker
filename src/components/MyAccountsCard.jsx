@@ -1,47 +1,74 @@
+// MyAccountsCard.jsx
 import React from 'react';
-import { Box, Typography } from '@mui/material';
-import useFinance from '../useFinance';
+import { Box, Typography, Divider } from '@mui/material';
+import { useFinance } from '../FinanceContext';
 
 const MyAccountsCard = () => {
   const { data } = useFinance();
+
+  console.log('MyAccountsCard rendered with data:', data);
 
   return (
     <Box>
       <Box sx={{
         display: "flex",
         flexDirection: "column",
-        p: "40px"
+        // p: "40px"
       }}>
+     
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "red",
+         // backgroundColor: "red",
           p: "20px"
         }}>
-          <Typography>Current Bank Account</Typography>
-          <Typography>{data.accounts.currentBankAccount}</Typography>
+          <Typography
+          sx={{
+            color:"grey",
+            fontSize:"13px"
+          }}>Current Bank Account</Typography>
+          <Typography 
+           sx={{
+            color:"#450202",
+            fontSize:"40px"
+          }}>{data.accounts.currentBankAccount.toLocaleString()}</Typography>
         </Box>
+        <Divider />
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "orange",
+          // backgroundColor: "orange",
           p: "20px"
         }}>
-          <Typography>Credit Card</Typography>
-          <Typography>{data.accounts.creditCard}</Typography>
+          <Typography
+            sx={{
+              color:"grey",
+              fontSize:"13px"
+            }}>Credit Card</Typography>
+          <Typography   sx={{
+            color:"#450202",
+            fontSize:"40px"
+          }}>{data.accounts.creditCard.toLocaleString()}</Typography>
         </Box>
+        <Divider />
         <Box sx={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "green",
+          // backgroundColor: "green",
           p: "20px"
         }}>
-          <Typography>Savings Account</Typography>
-          <Typography>{data.accounts.savingsAccount}</Typography>
+          <Typography   sx={{
+            color:"grey",
+            fontSize:"13px"
+          }}>Savings Account</Typography>
+          <Typography   sx={{
+            color:"#450202",
+            fontSize:"40px"
+          }}>{data.accounts.savingsAccount.toLocaleString()}</Typography>
         </Box>
       </Box>
     </Box>
   );
-}
+};
 
 export default MyAccountsCard;

@@ -1,6 +1,6 @@
 **Welcome to My Spendy Tracker**
 
-Vercel link : https://personalfinancetracker-apyrowcwp-rozzys-projects.vercel.app/
+Vercel link : https://personal-finance-tracker-opal.vercel.app/
 
 **Introduction** \
 The Personal Finance Tracker application is designed to help you manage your financial transactions effectively. It allows you to record income, track expenses by category, and visualize spending patterns through a pie chart. Whether you're budgeting, analyzing your spending habits, or simply keeping track of your accounts, this application provides a straightforward way to monitor your finances.
